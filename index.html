@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChampionX Login</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="oil-tank-container">
+      <div class="oil-tank"></div>
+      <!-- Oil Tank -->
+      <div class="oil-stream"></div>
+      <!-- Oil pouring down -->
+    </div>
+
+    <div class="login-container">
+      <div class="oil-fill"></div>
+      <!-- Oil filling animation inside form -->
+      <h2>Login to ChampionX</h2>
+      <form onsubmit="return login()">
+        <!-- Prevent default form submission -->
+        <input type="text" id="username" placeholder="Username" />
+        <input type="password" id="password" placeholder="Password" />
+        <button type="submit">Login</button>
+        <p id="error-message" style="color: red"></p>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

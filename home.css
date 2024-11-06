@@ -1,0 +1,188 @@
+/* start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #064776;
+    --accent-color: #4997d0;
+    --section-padding: 60px;
+    --text-color: #333;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Work Sans', sans-serif;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* Header */
+.header {
+    padding: 30px;
+    background-color:#fff;
+}
+
+.header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header .logo {
+    width: 200px;
+}
+
+.header .logo:hover{
+    transform:scale(1.5);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    z-index: 1;
+  }
+
+.header .links {
+    position: absolute;
+    right: 2px; /* Move span to the right */
+    top: 50%; /* Vertically center span */
+    transform: translateY(-50%);
+}
+
+.header .links span.icon {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.header .links span.icon span {
+    display: block;
+    height: 3px;
+    background-color: #064776;
+    margin: 5px 0;
+    width: 25px;
+}
+
+/* Dropdown menu styling */
+.header .links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #064776;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 10px);
+    display: none;
+}
+
+.header .links:hover ul {
+    display: block;
+}
+
+.header .links ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.header .links ul li a:hover {
+    background-color: #fff;
+    color: #064776;
+}
+
+/* Dashboard Styling */
+.dashboard {
+    padding: var(--section-padding) 0;
+    background-color: #064776;
+    text-align: center;
+}
+
+.dashboard h2 {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.dashboard-frame {
+    width: 100%;
+    height: 100vh;
+    border: none;
+}
+
+/* Sections */
+.sections {
+    display: flex;              /* Use flexbox to arrange items */
+    justify-content: space-between; /* Space between items */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.Feedback, .Contact {
+    background-color: #f4f4f4; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    flex: 1;                   /* Each div will take up equal space */
+    margin: 10px; 
+    padding: 20px; /* Add padding inside the sections */
+}
+
+
+.feedback-button {
+    padding: 10px 15px; /* Padding for buttons */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Change cursor to pointer */
+    margin-right: 10px; /* Space between buttons */
+    font-size: 16px; /* Font size for buttons */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.feedback-button:hover {
+    background-color: #064776; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
